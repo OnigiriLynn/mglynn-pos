@@ -31,11 +31,11 @@ export default function UsersForm(props) {
                                     name="image"
                                 />
                                {(preview || formData.image) && (
-                                                                   <div style={{ marginTop: '15px' }} className="image-preview">
-                                                                       <p>Preview:</p>
-                                                                       <img src={preview?preview:(URL + formData.image)} alt="Selected preview" style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }} />
-                                                                   </div>
-                                                               )}
+                                    <div style={{ marginTop: '15px' }} className="image-preview">
+                                            <p>Preview:</p>
+                                                <img src={preview?preview:(URL + formData.image)} alt="My Lynn POS" title="My Lynn POS" style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }} />
+                                            </div>
+                                )}
                             </div>
                             <div className="form-group">
                                 <label>Full Name</label>
