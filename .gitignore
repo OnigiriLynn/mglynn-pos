@@ -1,0 +1,12 @@
+# for frontend
+react-frontend/node_modules/
+react-frontend/build/
+react-frontend/.env
+react-frontend/.DS_Store
+react-frontend/package-lock.json
+
+# for backend
+nodejs-backend/node_modules/
+nodejs-backend/.env
+nodejs-backend/.DS_Store
+nodejs-backend/package-lock.json
