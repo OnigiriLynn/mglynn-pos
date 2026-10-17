@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './images/0-02-06-70b952ceae9fcb96a8c6792783fc04968f6030526fe3930cfaa047f748090b06_226c409df6a.jpg';
+import logo from './images/2,700+ Coffee Bean Heart Illustrations - iStock.png';
 import Products from './Products';
 import Card from './Card';
 import Receipt from './Receipt';
@@ -14,11 +14,11 @@ function Main() {
     const [loginUser, setLoginUser] = useState(true)
 
     const addToCart = (product) => {
-        const foundItem = cartItem.find(item => item.id === product.id);
+        const foundItem = cartItem.find(item => item._id === product._id);
         if(foundItem){
             setCartItem(
                 cartItem.map( item => 
-                    item.id === product.id ? {...item, quantity: item.quantity + 1}: item
+                    item._id === product._id ? {...item, quantity: item.quantity + 1}: item
             ));
         }else{
             setCartItem([...cartItem, {...product, quantity: 1}] );
@@ -26,16 +26,16 @@ function Main() {
     }
 
     const removeCart = (id) => {
-        setCartItem(cartItem.filter( item => item.id !== id));
+        setCartItem(cartItem.filter( item => item._id !== id));
     }
 
     const updateCart = (product, newQuantity) => {
         if(newQuantity === 0){
-            removeCart(product.id);
+            removeCart(product._id);
         }else{
             setCartItem(
                 cartItem.map( item => 
-                    item.id === product.id ? {...item, quantity: newQuantity}: item
+                    item._id === product._id ? {...item, quantity: newQuantity}: item
             ));
         }
        
@@ -110,7 +110,7 @@ function Main() {
     <div className="pos-app">
       {/* Header */}
       <div className="header">
-        <h1 className='head-text'><img src={logo} width={100}></img><span>MNZ Coffee &amp; Tea Shop</span></h1>
+        <h1 className='head-text'><img src={logo} width={100}></img><span>Onigiri Cafe &amp; Tea Shop</span></h1>
       </div>
       
       {/* Main Content */}

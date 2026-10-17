@@ -432,22 +432,4 @@
     margin-left: 1vw;
   }
 
-  .doctor-img {
-	cursor: pointer;
-	height: 80px;
-	margin: 0 auto 15px;
-	position: relative;
-	width: 80px;
-}
-.doctor-img .avatar {
-	font-size: 24px;
-	height: 80px;
-	line-height: 80px;
-	margin: 0;
-	width: 80px;
-}
-.avatar img {
-  border-radius: 50% !important;
-  height: 80px !important;
-  width: 80px !important;
-}
+  

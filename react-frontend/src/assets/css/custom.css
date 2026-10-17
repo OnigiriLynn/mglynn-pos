@@ -4,3 +4,26 @@
 .image-preview img{
     height: 20vh !important;
 }
+
+.product-img {
+	cursor: pointer !important;
+	height: 80px !important;
+	margin: 0 auto 20px !important;
+	position: relative !important;
+	width: 80px !important;
+}
+
+.product-img  .productImg {
+	font-size: 24px !important;
+    font-weight: bold !important;
+	height: 80px !important;
+	line-height: 80px !important;
+	margin: 0 !important;
+	width: 80px !important;
+}
+
+.productImg>img {
+  border-radius: 8px !important;
+  height: 90px !important;
+  width: 90px !important;
+}

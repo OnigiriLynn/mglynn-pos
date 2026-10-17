@@ -9,8 +9,8 @@ export default function ProductsSection(props){
             
             {products && products.map( product => (
                 <div key={product._id} className="product-card" onClick={()=>addToCart(product)}>
-                    <div className="doctor-img">
-                      <a className="avatar" href="#"><img width="100" height="100" alt="" src={URL+product.image} /></a>
+                    <div className="product-img">
+                      <a className="productImg" href="#"><img width="100" height="100" alt="" src={URL+product.image} /></a>
                     </div>
                     <h3>{product.name}</h3>
                     <p className="price">${product.price.toFixed(2)}</p>

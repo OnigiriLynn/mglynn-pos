@@ -8,7 +8,7 @@ export default function CardSection(props) {
             <>
               <div className="cart-items">
                 {cartItem && cartItem.map( item => (
-                     <div key={item.id} className="cart-item">
+                     <div key={item._id} className="cart-item">
                         <div className="item-info">
                           <h4>{item.name}</h4>
                           <p>${item.price.toFixed(2)} each</p>
